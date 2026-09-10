@@ -49,7 +49,7 @@ function App() {
            <input
            onChange={(e) => handlePost(e)}
            name='title'
-
+          value={post.title}
         className='border border-gray-500 p-4 w-full'
         placeholder='title'
          /> 
@@ -59,6 +59,7 @@ function App() {
         <textarea
         onChange={(e) => handlePost(e)}
         name='content'
+        value={post.content}
         className='border border-gray-500 p-4 w-full'
         placeholder='content'
          />
