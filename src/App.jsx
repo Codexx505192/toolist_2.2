@@ -57,7 +57,7 @@ function App() {
         {isModal && 
         <div onClick={() => setIsModal(false)} className="modal-shadow">
 
-        <div className='w-1/2 mx-auto mb-4 bg-white p-4 border border-gray-200'>
+        <div onClick={(e) => e.stopPropagation()} className='w-1/2 mx-auto mb-4 bg-white p-4 border border-gray-200'>
         <div className='mb-4'>
            <input
         className='border border-gray-500 p-4 w-full'
